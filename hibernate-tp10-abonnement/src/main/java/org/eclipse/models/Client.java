@@ -1,4 +1,4 @@
-package org.eclipse.model;
+package org.eclipse.models;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -62,8 +62,8 @@ public class Client {
 
 	@Override
 	public String toString() {
-		return "\tClient [" + idClient + " nom=" + nom + ", email=" + email + ", tel=" + tel + ", ville="
-				+ ville + "]";
+		return "\tClient [" + idClient + "] nom=" + nom + ", email=" + email + ", tel=" + tel + ", ville="
+				+ ville;
 	}
 	
 	

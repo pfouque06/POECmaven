@@ -3,7 +3,7 @@ package org.eclipse.main;
 import java.sql.Date;
 import java.util.List;
 
-import org.eclipse.model.*;
+import org.eclipse.models.*;
 import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

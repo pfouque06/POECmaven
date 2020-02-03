@@ -1,6 +1,6 @@
-package org.eclipse.config;
+package org.eclipse.utils;
 
-import org.eclipse.model.*;
+import org.eclipse.models.*;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 

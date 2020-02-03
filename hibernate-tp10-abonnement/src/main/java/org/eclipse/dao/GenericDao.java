@@ -25,8 +25,8 @@ public class GenericDao<T, P> {
 		P result = null;
 		try {
 			tx = session.beginTransaction();
-//			result = (P) session.save(obj); // not recursive
-			session.save(obj); // presist for recursive save
+			result = (P) session.save(obj); // not recursive
+//			session.persist(obj); // presist for recursive save
 			tx.commit();
 		} catch (Exception e) {
 			if (tx != null)
