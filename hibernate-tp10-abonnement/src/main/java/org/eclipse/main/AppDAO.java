@@ -54,8 +54,9 @@ public class AppDAO
 //		System.out.println(clientDAO.save(c02));
         
 		List<Client> clients = clientDAO.findAll();
-        for (Client client : clients)
-        	System.out.println(client);
+		clients.forEach(System.out::println);
+        //for (Client client : clients)
+        //	System.out.println(client);
 		
         // factures
         System.out.println();
@@ -91,8 +92,9 @@ public class AppDAO
 //        System.out.println(factureDAO.save(f04));
        
         List<Facture> factures = factureDAO.findAll();
-        for (Facture facture : factures)
-        	System.out.println(facture);
+        factures.forEach(System.out::println);
+        //for (Facture facture : factures)
+        //	System.out.println(facture);
         
         //get client
         System.out.println();
@@ -167,9 +169,10 @@ public class AppDAO
         // Getall
         System.out.println();
         System.out.println("----getAll Abonnements GSM---");
-        List<Abonnement> aboGSM = abonnementDao.findAll();
-        for (Abonnement abo : aboGSM)
-        	System.out.println(abo);
+        List<Abonnement> abo = abonnementDao.findAll();
+        abo.forEach(System.out::println);
+        //for (Abonnement abo : aboGSM)
+        //	System.out.println(abo);
         
 //		System.out.println();
 //		System.out.println("----getAll Abonnements Fixe---");
